@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "totalPrice": {
+      "type": "integer"
+    },
+    "jenisPembayaran": {
+      "type": "string"
+    },
+    "bank": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "dikirim",
+        "belum bayar",
+        "sudah bayar",
+        "dibatal"
+      ]
+    },
+    "product": {
+      "type": "json"
+    },
+    "pengiriman": {
+      "type": "json"
+    }
+  }
+}
