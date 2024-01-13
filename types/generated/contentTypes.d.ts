@@ -919,12 +919,15 @@ export interface ApiHeroHero extends Schema.CollectionType {
     singularName: 'hero';
     pluralName: 'heroes';
     displayName: 'hero';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     title: Attribute.String;
+    subText: Attribute.String;
+    image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -947,7 +950,7 @@ export interface ApiOrderOrder extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    totalPrice: Attribute.Integer;
+    totalHarga: Attribute.Integer;
     jenisPembayaran: Attribute.String;
     bank: Attribute.String;
     status: Attribute.Enumeration<

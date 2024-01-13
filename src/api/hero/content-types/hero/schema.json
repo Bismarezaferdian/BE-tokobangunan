@@ -4,7 +4,8 @@
   "info": {
     "singularName": "hero",
     "pluralName": "heroes",
-    "displayName": "hero"
+    "displayName": "hero",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,19 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "subText": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
