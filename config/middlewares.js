@@ -15,14 +15,7 @@ module.exports = [
       },
     },
   },
-  {
-    name: "strapi::cors",
-    config: {
-      enabled: true,
-      headers: "*",
-      origin: ["http://localhost:1337", "https://megautama.netlify.app/"],
-    },
-  },
+  "strapi::cors",
   "strapi::poweredBy",
   "strapi::query",
   "strapi::body",
